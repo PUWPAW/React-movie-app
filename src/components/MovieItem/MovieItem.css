@@ -1,0 +1,63 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card-wrapper img {
+  height: 429px;
+}
+
+.card-wrapper:hover .description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.description {
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 429px;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateY(-110%);
+  transition: all 0.6s;
+  overflow-y: auto;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-title:hover {
+  white-space: normal;
+}
+
+.card-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  background-color: rgb(59, 54, 54);
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.bad {
+  color: rgb(255, 115, 0);
+}
+
+.middle {
+  color: yellow;
+}
+
+.high {
+  color: rgb(17, 211, 17);
+}
